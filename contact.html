@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — MySite</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">MySite</a>
+        <button
+          id="navToggleContact"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primaryNavContact"
+        >
+          ☰
+        </button>
+        <nav
+          id="primaryNavContact"
+          class="primary-nav"
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Contact</h1>
+      <p>
+        Please use the form below to get in touch. This form includes JavaScript
+        validation.
+      </p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            minlength="2"
+            maxlength="60"
+          />
+          <div class="error" id="error-name"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <div class="error" id="error-email"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            minlength="10"
+          ></textarea>
+          <div class="error" id="error-message"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div
+          id="contact-success"
+          class="success"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; 2025 MySite</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
