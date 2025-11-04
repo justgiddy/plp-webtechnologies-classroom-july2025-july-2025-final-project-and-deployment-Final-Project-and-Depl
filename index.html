@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Multipage Website — Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">MySite</a>
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          ☰
+        </button>
+        <nav id="primaryNav" class="primary-nav" role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Welcome to MySite</h1>
+        <p class="lead">
+          A clean, responsive multipage website scaffolded for deployment.
+        </p>
+        <p><a class="cta" href="services.html">Explore Services</a></p>
+      </section>
+
+      <section class="features">
+        <h2>What I offer</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Responsive Design</h3>
+            <p>
+              Layouts that adapt from mobile to desktop using CSS Grid and
+              Flexbox.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Interactive UI</h3>
+            <p>
+              Accessible interactive components powered by vanilla JavaScript.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Performance</h3>
+            <p>Lightweight code and thoughtful structure for fast loading.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; 2025 MySite. Built for the final assignment.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="index.html">Home</a> · <a href="about.html">About</a> ·
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
